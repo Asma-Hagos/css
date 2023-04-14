@@ -24,10 +24,10 @@ p {
     color: #424d58;
 }
   
-
+/*------ NAV MENU -----*/
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 80px;
     background-color: #424d58;
@@ -97,6 +97,8 @@ nav a {
     height: 2px;
     background-color: #ffc107;
   }
+  /*---- Main section ----*/
+
   .image-container {
     display: flex;
     justify-content: center;
@@ -136,9 +138,17 @@ nav a {
     font-size: 36px;
     font-weight: bold;
     font-family:'Dancing Script', cursive; 
+    letter-spacing: 2px;
     text-shadow: 2px 2px 4px #000;
     align-self: flex-start;
- 
+  }
+
+  .text-wrapper p {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    line-height: 2rem;
   }
   .text-wrapper button {
     position: relative;
@@ -166,65 +176,19 @@ nav a {
     background-color: white;
     transition: .5s;
   }
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  /*------ CONTENT SECTION -----*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
   }
   
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  .grid-item {
+    background-color: #ccc;
   }
-  
-  .col {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
+  .grid-item2 {
+
+    background-color: red;
   }
-  
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .colored-box {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-  }
-  
-  .colored-box.col-small {
-    height: 100px;
-  }
-  
-  .colored-box.col-medium {
-    height: 150px;
-  }
-  
-  .colored-box.col-large {
-    height: 200px;
-  }
-  
-  .col-large {
-    flex: 2;
-  }
-  
-  .col-medium {
-    flex: 1;
-  }
-  
-  .col-small {
-    flex: 1;
-  }
-  
-    
